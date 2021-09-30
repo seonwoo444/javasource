@@ -1,0 +1,32 @@
+package Poly;
+
+public class EmployeeEx {
+
+	public static void main(String[] args) {
+
+		Worker worker = new Worker();
+		
+		
+		Employee e1 = new Employee();
+		e1.setName("홍길동");
+		e1.setPosition("사원");
+		worker.work(e1);
+		
+		Ceo ceo= new Ceo();
+		ceo.setName("박보검");
+		ceo.setPosition("관리자");
+		worker.work(ceo);
+		
+		Manager manager = new Manager();
+		manager.setName("김하늘");
+		manager.setPosition("매니저");
+		worker.work(manager);
+		
+		Parttime part = new Parttime();
+		part.setName("이지훈");
+		part.setPosition("아르바이트");
+		worker.work(part);
+
+	}
+
+}

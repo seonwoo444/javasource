@@ -1,0 +1,19 @@
+
+public class Person {
+		//final : 수정불가, 초기화 무조건 필요
+		//사용되는 곳 : 클래스, 메서드, 멤버변수, 지역변수
+		// 클래스 : 상속불가
+		// 메소드 : 오버라이딩 불가
+		// 멤버변수, 지역변수 : 수정불가
+	
+	final String nation = "Korea";
+	final String ssn;
+	String name;
+	
+	public Person(String ssn, String name) {
+		super();
+		this.ssn = ssn;
+		this.name = name;
+	}
+	
+}
